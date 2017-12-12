@@ -36,6 +36,10 @@ hbs.registerHelper('screamIt', (text) => {
   return text.toUpperCase();
 });
 
+hbs.registerHelper('portfolio', (text) => {
+  return text;
+});
+
 //routes, handling
 // app.get('/', (req, res) => {
 //   // res.send('<h1>Hello</h1>');
@@ -58,6 +62,13 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
   res.render('about.hbs', {
     pageTitle: 'About Page'
+  });
+});
+
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects page',
+    projects: 'Portfolio here'
   });
 });
 
