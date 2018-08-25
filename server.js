@@ -40,17 +40,6 @@ hbs.registerHelper('portfolio', (text) => {
   return text;
 });
 
-//routes, handling
-// app.get('/', (req, res) => {
-//   // res.send('<h1>Hello</h1>');
-//   res.send({
-//     name: 'Jesse',
-//     Likes: [
-//       'boys',
-//       'dicks'
-//     ]
-//   });
-// });
 
 app.get('/', (req, res) => {
   res.render('home.hbs', {
